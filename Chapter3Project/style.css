@@ -1,0 +1,32 @@
+/*
+Author: James Lee
+Date: October 30, 2025
+Project: Chapter 3 Project - WEB124
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+}
+
+#console-instructions {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+}
