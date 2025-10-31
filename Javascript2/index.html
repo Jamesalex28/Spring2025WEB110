@@ -1,36 +1,32 @@
-<!-- 
-  Name: James Lee
-  Date: 29/10/2025
-  Project: JavaScript30 Clock
+<!--
+Name: James Lee
+Date: 10/29/2025
+Project: JavaScript30 Clock
+Source: Based on Wes Bos JavaScript30
+Improvements: Added digital clock
 -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clock Project - Debug</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>JavaScript Clock</h1>
-    <p id="status">Estado: esperando ejecución de JavaScript...</p>
-  </header>
+  <h1>JavaScript Clock</h1>
 
-  <main>
-    <div class="clock" aria-label="Reloj analógico">
-      <div class="clock-face">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-      </div>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
     </div>
+  </div>
 
-    <div id="digitalTime" class="digital" aria-live="polite">--:--:--</div>
-  </main>
+  <div id="digitalTime">--:--:--</div>
 
-  <!-- script justo antes del cierre del body -->
+  <!-- script link -->
   <script src="script.js"></script>
 </body>
 </html>
