@@ -12,7 +12,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #000; /* Fondo negro */
+  background: linear-gradient(135deg, #3a7bd5, #3a6073);
   color: #fff;
   text-align: center;
 }
@@ -20,13 +20,11 @@ body {
 .clock {
   width: 300px;
   height: 300px;
-  border: 10px solid #fff; /* borde blanco */
+  border: 10px solid #fff;
   border-radius: 50%;
   position: relative;
-  background-color: #000; /* fondo negro del reloj */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
 }
 
 .clock-face {
@@ -39,30 +37,15 @@ body {
 .hand {
   width: 50%;
   height: 4px;
-  background: #fff; /* manecillas blancas */
+  background: white;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s cubic-bezier(.4,2.3,.3,1);
-  border-radius: 2px;
-}
-
-/* center green */
-.clock-center {
-  width: 20px;
-  height: 20px;
-  background-color: #0f0; /* verde */
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; /* up to the clock*/
 }
 
 #digitalTime {
   margin-top: 20px;
   font-size: 1.5rem;
-  font-weight: bold;
 }
