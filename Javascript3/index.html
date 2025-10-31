@@ -1,0 +1,33 @@
+<!--
+Project: JavaScript30 Countdown Timer (Improved)
+Student: James Lee
+Date: 30/10/2025
+Source: Based on Wes Bos JavaScript30
+Improvements: Added input for minutes, reset button, dynamic styling, and visual enhancements.
+Challenging/learning points: Handling intervals, input validation, and updating the DOM dynamically.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Countdown Timer</h1>
+
+  <div class="timer">
+    <span id="minutes">00</span>:<span id="seconds">00</span>
+  </div>
+
+  <div class="controls">
+    <input type="number" id="inputMinutes" placeholder="Minutos" min="0">
+    <button id="startBtn">Iniciar</button>
+    <button id="resetBtn">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
