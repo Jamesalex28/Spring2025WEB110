@@ -3,15 +3,15 @@ Project: JavaScript30 Slide in on Scroll (Improved)
 Student: James Lee
 Date: 10/30/2025
 Source: Based on Wes Bos JavaScript30
-Improvements: Smooth transitions, shadow effects, and responsive layout.
+Improvements: Smooth slide-in animations, shadow effects, responsive layout.
 Challenging/learning points: CSS transforms and scroll-triggered animations.
 */
 
 body {
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
   font-family: Arial, sans-serif;
   margin: 0;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
   text-align: center;
 }
 
@@ -31,9 +31,9 @@ h1 {
   width: 400px;
   max-width: 80%;
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-100%); /* out of the screen */
   transition: all 0.7s ease-out;
-  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.7); /* green neon shadow */
   border-radius: 10px;
 }
 
