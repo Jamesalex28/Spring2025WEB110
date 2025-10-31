@@ -1,0 +1,43 @@
+/*
+Project: JavaScript30 Slide in on Scroll (Improved)
+Student: James Lee
+Date: 10/30/2025
+Source: Based on Wes Bos JavaScript30
+Improvements: Smooth transitions, shadow effects, and responsive layout.
+Challenging/learning points: CSS transforms and scroll-triggered animations.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 50px 0;
+}
+
+.slide-section {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-in {
+  width: 400px;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.7s ease-out;
+  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.7);
+  border-radius: 10px;
+}
+
+.slide-in.active {
+  transform: translateX(0);
+  opacity: 1;
+}
