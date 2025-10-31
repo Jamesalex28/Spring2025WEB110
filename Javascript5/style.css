@@ -1,36 +1,38 @@
-/* global styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  overflow-x: hidden; 
-
-/* 🧱 main container */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+/* Controls */
+.controls {
+  margin-top: 10px;
 }
 
-/* 🎥 VIDEO PLAYER */
-.viewer {
-  display: block;
+button,
+input[type='range'] {
+  background: #111;
+  color: #0f0;
+  border: 1px solid #0f0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0f0;
+  color: black;
+}
+
+/* 📊 Progress bar */
+.progress {
+  background: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 10px;
   width: 100%;
-  height: auto; /* mantein the proportion */
-  max-width: 800px; 
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
-  object-fit: contain; 
-  background-color: #000; 
+  margin-top: 10px;
+  overflow: hidden;
 }
 
-/* 📱 MEDIA QUERIES for mobiles */
-@media (max-width: 768px) {
-  .viewer {
-    max-width: 100%;
-  }
+.progress__filled {
+  width: 0%;
+  background: #0f0;
+  height: 100%;
+  transition: width 0.1s;
 }
