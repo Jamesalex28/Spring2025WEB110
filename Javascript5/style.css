@@ -1,76 +1,36 @@
-/*
-Name: [Tu Nombre]
-Date: 10/30/2025
-Source: CSS inspired by Wes Bos JavaScript30 "Custom Video Player"
-Notes: I changed colors, added modern shadows, and improved responsiveness.
-*/
-
-/* general */
+/* global styles */
 body {
-  background-color: #000;
-  color: #fff;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden; 
+
+/* 🧱 main container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* main repository */
-.player {
-  max-width: 750px;
-  border: 5px solid #32cd32;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px #32cd32;
-}
-
-/* Video */
+/* 🎥 VIDEO PLAYER */
 .viewer {
-  width: 100%;
-  max-width: 800px; /* 🔸 max wide */
-  height: auto; /* proportion */
   display: block;
-  margin: 20px auto; /* video center */
-  border-radius: 10px; 
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4); /* green shadow */
-
-/* Controls */
-.player__controls {
-  display: flex;
-  flex-wrap: wrap;
-  background: #111;
-  padding: 10px;
-  align-items: center;
+  width: 100%;
+  height: auto; /* mantein the proportion */
+  max-width: 800px; 
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+  object-fit: contain; 
+  background-color: #000; 
 }
 
-.player__button {
-  background: none;
-  border: 2px solid #32cd32;
-  color: #32cd32;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.player__button:hover {
-  background: #32cd32;
-  color: black;
-}
-
-.progress {
-  flex: 1;
-  background: #444;
-  height: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.progress__filled {
-  width: 0%;
-  background: #32cd32;
-  flex: 0;
+/* 📱 MEDIA QUERIES for mobiles */
+@media (max-width: 768px) {
+  .viewer {
+    max-width: 100%;
+  }
 }
