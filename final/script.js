@@ -1,4 +1,8 @@
-document.getElementById("calcBtn").addEventListener("click", runAll);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("calcBtn");
+  btn.addEventListener("click", runAll);
+});
 
 function addition(num) {
   let result = "";
@@ -30,16 +34,24 @@ function multiplication(num) {
 
 function division(num) {
   let result = "";
-  for (let i = 1; i <= 10; i++) {
-    result += `${i} / ${num} = ${(i / num).toFixed(2)}<br>`;
+  if (num === 0) {
+    // evitar Infinity y errores con toFixed
+    for (let i = 1; i <= 10; i++) {
+      result += `${i} / ${num} = undefined (division by 0)<br>`;
+    }
+  } else {
+    for (let i = 1; i <= 10; i++) {
+      result += `${i} / ${num} = ${(i / num).toFixed(2)}<br>`;
+    }
   }
   document.getElementById("division").innerHTML = result;
 }
 
 function runAll() {
-  const num = parseFloat(document.getElementById("num").value);
-  if (isNaN(num)) {
-    alert("Please enter a number!");
+  const raw = document.getElementById("num").value;
+  const num = parseFloat(raw);
+  if (raw === "" || isNaN(num)) {
+    alert("Por favor introduce un número válido.");
     return;
   }
   addition(num);
