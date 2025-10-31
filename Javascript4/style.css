@@ -32,11 +32,11 @@ h1 {
   max-width: 80%;
   opacity: 0;
   transition: all 0.7s ease-out;
-  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.7); /* Sombra verde neón */
+  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.7); /* green shadow */
   border-radius: 10px;
 }
 
-/* Diferencia entre izquierda y derecha */
+/* diference between left and right */
 .slide-in.left {
   transform: translateX(-100%);
 }
@@ -44,7 +44,7 @@ h1 {
   transform: translateX(100%);
 }
 
-/* Cuando activa la animación */
+
 .slide-in.active {
   transform: translateX(0);
   opacity: 1;
