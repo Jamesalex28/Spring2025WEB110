@@ -45,7 +45,7 @@ function division(num) {
   document.getElementById("division").innerHTML = result;
 }
 
-// Nueva función: Potencia (Pow)
+// 🆕 FUNCIÓN POTENCIA (Pow)
 function power(num) {
   let result = "";
   for (let i = 1; i <= 10; i++) {
@@ -54,16 +54,19 @@ function power(num) {
   document.getElementById("power").innerHTML = result;
 }
 
+// execute all the functions
 function runAll() {
   const raw = document.getElementById("num").value;
   const num = parseFloat(raw);
-  if (raw === "" || isNaN(num)) {
-    alert("Por favor introduce un número válido.");
+
+  if (isNaN(num)) {
+    alert("Enter a valid number please.");
     return;
   }
+
   addition(num);
   subtraction(num);
   multiplication(num);
   division(num);
-  power(num);
+  power(num); 
 }
