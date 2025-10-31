@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+label, input, button {
+  font-size: 1em;
+  margin: 5px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+p {
+  width: 20%;
+  text-align: left;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .results {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    width: 90%;
+  }
+}
