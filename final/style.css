@@ -5,8 +5,8 @@
 
 body {
   font-family: Georgia, "Times New Roman", serif;
-  background-color: #006400; /* Verde oscuro */
-  color: white; /* Texto blanco */
+  background-color: #000000; /* 🖤 black  */
+  color: white; /* white text */
   margin: 20px;
   text-align: center;
 }
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  background-color: #32cd32; /* Verde brillante al pasar el mouse */
+  background-color: #32cd32; /* green */
 }
 
 /* ======= Results ======= */
@@ -58,7 +58,7 @@ button:hover {
   width: 30%;
   text-align: left;
   line-height: 1.6;
-  background: rgba(255, 255, 255, 0.1); /* Verde translúcido */
+  background: rgba(255, 255, 255, 0.1); 
   padding: 10px;
   border-radius: 6px;
   color: white;
