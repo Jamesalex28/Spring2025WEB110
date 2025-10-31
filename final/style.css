@@ -12,9 +12,10 @@ label, input, button { font-size: 1rem; margin-right: 6px; vertical-align: middl
   justify-content: space-between;
   margin-top: 20px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .results p {
-  width: 23%;
+  width: 30%;
   text-align: left;
   line-height: 1.6;
   background: #f6f6f6;
@@ -24,8 +25,7 @@ label, input, button { font-size: 1rem; margin-right: 6px; vertical-align: middl
 
 /* Tablet */
 @media (max-width: 900px) {
-  .results { flex-wrap: wrap; }
-  .results p { width: 48%; }
+  .results p { width: 45%; }
 }
 
 /* Phone */
