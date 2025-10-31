@@ -1,6 +1,6 @@
 /*
-Name: [Tu Nombre]
-Date: October 30, 2025
+Name: James Lee
+Date: 10/30/2025
 Source: Wes Bos JavaScript30 "Custom Video Player"
 Notes: I added keyboard shortcuts (space = play/pause, arrows to skip)
 and improved progress bar interactions.
