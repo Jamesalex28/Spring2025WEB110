@@ -1,3 +1,8 @@
+/*
+Name: James Lee
+Date: 10/30/2025
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("calcBtn");
   btn.addEventListener("click", runAll);
