@@ -3,7 +3,7 @@ Project: JavaScript30 Slide in on Scroll (Improved)
 Student: James Lee
 Date: 10/30/2025
 Source: Based on Wes Bos JavaScript30
-Improvements: Added scroll event listener and active class toggle for animation.
+Improvements: Scroll event listener, alternating slide directions, active class toggle for animation.
 Challenging/learning points: Calculating scroll position and triggering animations when elements enter viewport.
 */
 
