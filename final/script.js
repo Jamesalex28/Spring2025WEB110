@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("calcBtn");
   btn.addEventListener("click", runAll);
@@ -35,7 +34,6 @@ function multiplication(num) {
 function division(num) {
   let result = "";
   if (num === 0) {
-    // evitar Infinity y errores con toFixed
     for (let i = 1; i <= 10; i++) {
       result += `${i} / ${num} = undefined (division by 0)<br>`;
     }
@@ -45,6 +43,15 @@ function division(num) {
     }
   }
   document.getElementById("division").innerHTML = result;
+}
+
+// Nueva función: Potencia (Pow)
+function power(num) {
+  let result = "";
+  for (let i = 1; i <= 10; i++) {
+    result += `${i} ^ ${num} = ${Math.pow(i, num)}<br>`;
+  }
+  document.getElementById("power").innerHTML = result;
 }
 
 function runAll() {
@@ -58,4 +65,5 @@ function runAll() {
   subtraction(num);
   multiplication(num);
   division(num);
+  power(num);
 }
