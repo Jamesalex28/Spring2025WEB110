@@ -4,7 +4,6 @@ Date: 10/29/2025
 Project: JavaScript30 Clock Project (Improved)
 */
 
-/* CSS color black with green in the center  */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -13,7 +12,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #000; /* fondo negro */
+  background-color: #000; /* Fondo negro */
   color: #fff;
   text-align: center;
 }
@@ -24,8 +23,10 @@ body {
   border: 10px solid #fff; /* borde blanco */
   border-radius: 50%;
   position: relative;
-  background-color: #000; /* fondo del reloj negro */
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* resplandor verde */
+  background-color: #000; /* fondo negro del reloj */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clock-face {
@@ -33,20 +34,6 @@ body {
   height: 100%;
   position: relative;
   transform: translateY(-3px);
-}
-
-/* Centro verde */
-.clock-face::after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  background-color: #0f0; /* verde */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 10;
 }
 
 .hand {
@@ -61,7 +48,21 @@ body {
   border-radius: 2px;
 }
 
+/* center green */
+.clock-center {
+  width: 20px;
+  height: 20px;
+  background-color: #0f0; /* verde */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* up to the clock*/
+}
+
 #digitalTime {
   margin-top: 20px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
