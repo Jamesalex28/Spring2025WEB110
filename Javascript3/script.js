@@ -20,7 +20,7 @@ function startTimer() {
 
   let totalSeconds = parseInt(inputMinutes.value) * 60;
   if (isNaN(totalSeconds) || totalSeconds <= 0) {
-    alert('Ingresa un número válido de minutos');
+    alert('Enter a valid number in minutes');
     return;
   }
 
