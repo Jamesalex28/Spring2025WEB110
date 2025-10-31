@@ -5,28 +5,32 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clock Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clock Project - Debug</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <h1>JavaScript Clock</h1>
+  <header>
+    <h1>JavaScript Clock</h1>
+    <p id="status">Estado: esperando ejecución de JavaScript...</p>
+  </header>
 
-  <div class="clock">
-    <div class="clock-face">
-      <div class="hand hour-hand"></div>
-      <div class="hand min-hand"></div>
-      <div class="hand second-hand"></div>
+  <main>
+    <div class="clock" aria-label="Reloj analógico">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
     </div>
-  </div>
 
-  <div id="digitalTime" class="digital"></div>
+    <div id="digitalTime" class="digital" aria-live="polite">--:--:--</div>
+  </main>
 
-  <!-- Link to JS file -->
+  <!-- script justo antes del cierre del body -->
   <script src="script.js"></script>
 </body>
 </html>
