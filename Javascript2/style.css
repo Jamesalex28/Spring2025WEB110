@@ -4,6 +4,7 @@ Date: 10/29/2025
 Project: JavaScript30 Clock Project (Improved)
 */
 
+/* CSS color black with green in the center  */
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -12,7 +13,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #000; /* Fondo negro */
+  background-color: #000; /* fondo negro */
   color: #fff;
   text-align: center;
 }
@@ -20,11 +21,10 @@ body {
 .clock {
   width: 300px;
   height: 300px;
-  border: 10px solid #fff;
+  border: 10px solid #fff; /* borde blanco */
   border-radius: 50%;
   position: relative;
-  padding: 20px;
-  background-color: #000; /* Fondo del reloj negro */
+  background-color: #000; /* fondo del reloj negro */
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* resplandor verde */
 }
 
@@ -35,7 +35,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* Centro del reloj verde */
+/* Centro verde */
 .clock-face::after {
   content: '';
   width: 15px;
@@ -52,12 +52,13 @@ body {
 .hand {
   width: 50%;
   height: 4px;
-  background: white;
+  background: #fff; /* manecillas blancas */
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s cubic-bezier(.4,2.3,.3,1);
+  border-radius: 2px;
 }
 
 #digitalTime {
