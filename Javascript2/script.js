@@ -1,5 +1,5 @@
 // Author: James Lee
-// Date: October 29, 2025
+// Date: 10/29/2025
 // Project: JavaScript30 Clock Project (Improved)
 // Source: Based on Wes Bos JavaScript30
 // Improvements: Added digital clock, smoother transitions, and modern background
