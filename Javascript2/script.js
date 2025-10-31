@@ -4,13 +4,13 @@
 // Source: Based on Wes Bos JavaScript30
 // Improvements: Added digital clock
 
-// Seleccionamos las manecillas y el div digital
+// Select the clock hand and the digital div
 const secondHand = document.querySelector('.second-hand');
 const minHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 const digitalTime = document.getElementById('digitalTime');
 
-// Función principal para actualizar el reloj
+// Main function to update the clock
 function setDate() {
   const now = new Date();
 
